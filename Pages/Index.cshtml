@@ -1,0 +1,10 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = User.Identity.IsAuthenticated;
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome@(System.Security.Principal.WindowsIdentity.GetCurrent().Name)</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
